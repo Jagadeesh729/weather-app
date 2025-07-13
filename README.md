@@ -1,45 +1,32 @@
-Weather App 🌤️
-Overview
-A simple weather web application built with React, using OpenWeatherMap API.
-It shows current temperature, humidity, wind speed, and animated weather icons (via Lottie).
+🌦️ Weather App
+A simple React weather app that shows real-time weather data using the OpenWeatherMap API.
+It detects your location automatically, and also allows searching for weather by city name.
+Supports light & dark mode toggle.
 
-Features
-🌍 Search by city name
+🚀 Features
+✅ Detects current location and shows weather.
+✅ Search any city for current weather.
+✅ Displays temperature, humidity, wind speed, and weather icons.
+✅ Toggle between light and dark mode.
 
-🌡️ Shows temperature, humidity & wind speed
+⚙️ Built With React
 
-🌦️ Animated weather icons
+OpenWeatherMap API
+CSS / Flexbox
+React Icons
 
-🌙 Toggle between dark / light mode
+🔑 Environment Variables
+This app uses a .env file to keep your API key safe.
 
-📍 Auto detects your location on load
+Create a file named .env in your project root:
+REACT_APP_API_KEY=your_openweathermap_api_key_here
+(✅ Make sure .env is listed in .gitignore so your key is not pushed to GitHub.)
 
-Installation
-bash
-Copy
-Edit
+🖥️ Installation & Run
 git clone https://github.com/Jagadeesh729/weather-app.git
 cd weather-app
 npm install
 npm start
-⚙️ API Key
-Create a .env file in the root with:
 
-env
-Copy
-Edit
-REACT_APP_API_KEY=your_api_key_here
-Get a free API key from OpenWeatherMap.
-
-Usage
-Type a city name & press Enter or click search.
-
-Toggle theme with the sun/moon icon.
-
-Tech Stack
-
-React (hooks, functional components)
-OpenWeatherMap API
-
-License
-MIT
+📝 License
+MIT License.
