@@ -11,7 +11,8 @@ import humidity_icon from '../Assets/humidity.png';
 import { BsSunFill, BsMoonFill } from 'react-icons/bs';
 
 const WeatherApp = () => {
-  const API_KEY = '76758c2e86c42a6afccf552ad6e330aa';
+  // Use your environment variable instead of hardcoding
+  const API_KEY = process.env.REACT_APP_API_KEY;
 
   const [cityInput, setCityInput] = useState('');
   const [weatherData, setWeatherData] = useState({
@@ -71,7 +72,7 @@ const WeatherApp = () => {
       },
       () => console.warn('Location access denied')
     );
-  }, []);
+  }, [API_KEY]);
 
   return (
     <div className={`container ${darkMode ? 'dark' : ''}`}>
@@ -125,4 +126,3 @@ const WeatherApp = () => {
 };
 
 export default WeatherApp;
-
